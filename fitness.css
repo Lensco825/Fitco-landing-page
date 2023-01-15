@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Lora:ital@0;1&family=Poppins:wght@300;400&family=Unbounded&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+:root {
+  --black: #000000;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 4;
+  height: 5%;
+  border: solid;
+  position: fixed;
+  background-color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav > p::after {
+  content: "";
+  width: 0px;
+  transition: 0.3s;
+  display: block;
+  background-color: black;
+}
+
+nav > p:hover::after {
+  width: 100%;
+  border: solid 1px black;
+}
+
+section {
+  width: 100%;
+  height: 70rem;
+  background-color: var(--black);
+  color: white;
+}
+
+.Intro {
+  background-image: url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  color: white;
+  background-size: cover;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+}
+
+.Intro > div {
+  width: 30rem;
+}
+
+.Intro > div > button {
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: solid white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.Intro > div > button:hover {
+  color: black;
+  background-color: white;
+}
+
+.Lessons {
+  font-family: "Poppins";
+  display: grid;
+  grid-gap: 50px;
+  place-items: center;
+  text-align: center;
+}
+
+.lesson_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 60px;
+}
+
+.lesson_card {
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s;
+}
+
+.lesson_card:hover {
+    background-color: #4a4e69;
+    height: 350px;
+}
+
+.lessonz {
+    background-size: cover;
+    border: solid;
+  width: 200px;
+  height: 200px;
+}
+
+.lessonz:nth-child(1) {
+  background-image: url("https://images.unsplash.com/photo-1603503364272-6e28e046b37a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80");
+}
+.lessonz:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+}
+
+.lessonz:nth-child(3) {
+  background-image: url("https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80");
+}
+
+.lessonsz:nth-child(4) {
+  background-image: url("https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+}
+
+.lessonz:nth-child(5) {
+  background-image: url("https://images.unsplash.com/photo-1613936360976-8f35cf0e5461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+}
+
+.lessonz:nth-child(6) {
+  background-image: url("https://images.unsplash.com/photo-1584952449180-f8fddc0b03a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+}
+
+
+.tracking {
+    font-family: 'Poppins';
+    display: grid;
+    place-items: center;
+}
+
+.tracking > img {
+    position: relative;
+    bottom: 600px;
+    right: 200px;
+    width: 300px;
+}
+
+.graph {
+    display: grid;
+    border: solid;
+    width: 400px;
+    height: 400px;
+    gap: 10px;
+    transform: rotate(-90deg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f9f9f9' fill-opacity='0.52'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.graph > div {
+    background-color: red;
+}
+
+.tracking_part1 {
+    display: grid;
+    place-items: center;
+}
+
+.blog {
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs > img {
+width: 200px;
+}
+
+.blogs {
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 220px;
+    padding: 30px;
+}
+
+.blogs:hover {
+    background-color: #4a4e69;
+}
+
+.blog_container {
+    display: flex;
+    gap: 40px;
+}
+
+h2 {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  display: flex;
+  justify-content: center;
+}

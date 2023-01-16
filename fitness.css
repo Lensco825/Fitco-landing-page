@@ -107,33 +107,33 @@ section {
     height: 350px;
 }
 
-.lessonz {
+.lesson_card {
     background-size: cover;
     border: solid;
   width: 200px;
   height: 200px;
 }
 
-.lessonz:nth-child(1) {
+.lesson_card:nth-child(1) {
   background-image: url("https://images.unsplash.com/photo-1603503364272-6e28e046b37a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80");
 }
-.lessonz:nth-child(2) {
+.lesson_card:nth-child(2) {
   background-image: url("https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
 }
 
-.lessonz:nth-child(3) {
+.lesson_card:nth-child(3) {
   background-image: url("https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80");
 }
 
-.lessonsz:nth-child(4) {
+.lesson_card:nth-child(4) {
   background-image: url("https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
 }
 
-.lessonz:nth-child(5) {
+.lesson_card:nth-child(5) {
   background-image: url("https://images.unsplash.com/photo-1613936360976-8f35cf0e5461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
 }
 
-.lessonz:nth-child(6) {
+.lesson_card:nth-child(6) {
   background-image: url("https://images.unsplash.com/photo-1584952449180-f8fddc0b03a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
 }
 
@@ -204,4 +204,39 @@ h2 {
   text-underline-offset: 10px;
   display: flex;
   justify-content: center;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+.reviews > div {
+    height: 15rem;
+    background-color: #4a4e69;
+    border-radius: 10px;
+}
+
+.reviews > img {
+    width: 300px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins';
+}
+
+.contacts {
+    list-style-type: none;
+    display: grid;
+    column-gap: 20px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: blue;
 }

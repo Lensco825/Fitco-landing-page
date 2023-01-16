@@ -16,6 +16,10 @@ h1 {
   margin: 0;
 }
 
+.menu {
+  display: none;
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -310,3 +314,81 @@ li:hover {
     color: blue;
 }
 
+
+@media (max-width: 920px) {
+  .blogs:nth-last-child(1) {
+    display: none;
+  }
+}
+
+
+@media (max-width: 675px) {
+  .lesson_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 634px) {
+  .tracking > img {
+    left: 2px;
+    width: 200px;
+  }
+  .blog_container {
+    flex-direction: column;
+  }
+  .reviews {
+    height: 90rem;
+  }
+}
+
+@media (max-width: 651px) {
+  .reviews > .quote > p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 465px) {
+  .reviews > .quote > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .lesson_container {
+    grid-template-columns: 100%;
+  }
+  .lesson_container > .lesson_card:nth-last-child(1), .lesson_card:nth-last-child(2), .lesson_card:nth-last-child(3) {
+display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .menu {
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 50px;
+    background-color: red;
+    border-radius: 5px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  nav {
+    display: none;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  inset: 0 0 0 60%;
+  position: fixed;
+  height: 100%;
+  gap: 10%;
+}
+
+.navbar > p {
+  margin-left: 70px;
+}

@@ -1,2 +1,6 @@
-var svg = document.querySelector('.graph');
-console.log(svg.getBoundingClientRect().width)
+var menu = document.querySelector('.menu');
+var nav = document.querySelector('nav');
+
+menu.addEventListener('click', function() {
+    nav.classList.toggle('navbar');
+})

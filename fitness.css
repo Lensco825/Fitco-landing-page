@@ -281,7 +281,7 @@ h2 {
 
 .reviews > div {
     height: 15rem;
-    background-color: #4a4e69;
+    background-color: #1d3557;
     border-radius: 10px;
 }
 
@@ -405,3 +405,15 @@ display: none;
 .navbar > p {
   margin-left: 70px;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+

@@ -4,4 +4,4 @@ This website is a fitness website made by me to practice my web development skil
 ## See blog post on how i made this 👇
 (There's supposed to be the blog here, but i haven't posted it yet, so here's the link to my profile)
 <br>
-![Blog profile](https://dev.to/lensco825)
+https://dev.to/lensco825/how-i-made-a-responsive-fitness-website-with-js-2080
